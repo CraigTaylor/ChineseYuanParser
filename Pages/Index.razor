@@ -5,7 +5,7 @@
 
 <div class="main box mt-4">
     <h1 class="text-center">
-        人民币金额大写解析器
+        人民币大写转换器
     </h1>
     <div class="text-center">
         <small>Blazor WASM By .Net @Environment.Version</small>
@@ -71,11 +71,91 @@
         <!-- 右侧参照表 -->
         <div class="col-md-4">
 
+            <div class="card">
+                <div class="card-header">
+                    参照表
+                </div>
+
+                <div class="card-body">
+
+                    <!-- 快捷键1-9 -->
+                    <div class="row">
+                        @foreach (var item in ReferList)
+                        {
+                            <div class="col-4">
+                                <button class="btn btn-light border refer" >
+                                    <div>
+                                        <h5>@item.Key</h5>
+                                        <h6>@item.Value</h6>
+                                    </div>
+                                </button>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
+<div class="mt-3 text-center author">
+    <a href="https://www.cnblogs.com/taylorshi" target="_blank">Taylor Shi</a>
+</div>
+
 @code{
+
+    /// <summary>
+    /// 参照列表
+    /// </summary>
+    /// <value></value>
+    public Dictionary<string, string> ReferList { get; set; } = new Dictionary<string, string>
+    {
+        {
+            "零","0"
+        },
+        {
+            "壹","1"
+        },
+        {
+            "贰","2"
+        },
+        {
+            "叁","3"
+        },
+        {
+            "肆","4"
+        },
+        {
+            "伍","5"
+        },
+        {
+            "陆","6"
+        },
+        {
+            "柒","7"
+        },
+        {
+            "捌","8"
+        },
+        {
+            "玖","9"
+        },
+        {
+            "拾","10"
+        },
+        {
+            "佰","百"
+        },
+        {
+            "仟","千"
+        },
+        {
+            "万","万"
+        },
+        {
+            "亿","亿"
+        },
+    };
 
     /// <summary>
     /// 数字金额
@@ -134,6 +214,10 @@
 
                 // 转换
                 ParseResult = RMBConverter.RMBToCap(_digitalAmount);
+            }
+            else
+            {
+                ParseResult = string.Empty;
             }
         }
     }

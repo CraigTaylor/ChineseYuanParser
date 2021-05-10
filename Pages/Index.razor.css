@@ -13,3 +13,13 @@
 .actions {
     min-width: 183px;
 }
+
+.refer {
+    width: 100%;
+    min-height: 80px;
+    margin-bottom: 10px;
+}
+
+.author {
+    margin-bottom: 10px;
+}
