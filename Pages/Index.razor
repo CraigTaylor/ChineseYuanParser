@@ -5,7 +5,7 @@
 
 <div class="main box mt-4">
     <h1 class="text-center">
-        人民币大写转换器
+        大写人民币翻译
     </h1>
     <div class="text-center">
         <small>Blazor WASM By .Net @Environment.Version</small>
@@ -29,14 +29,16 @@
                 </div>
 
                 <!-- 数字金额输入框 -->
-                <div class="d-flex">
-                    <div class="form-group mr-3 w-100">
+                <div class="row">
+                    <div class="col-md-8" style="margin-bottom: 10px;">
                         <input type="text" class="form-control" placeholder="请输入数字金额" @bind-value="DigitalAmount" @bind-value:event="oninput" />
                     </div>
-                    <div class="actions text-right">
-                        <button class="btn btn-success" @onclick="CopyResult" >复制</button>
-                        <button class="btn btn-primary" @onclick="ReadResult" >朗读</button>
-                        <button class="btn btn-danger" @onclick="ClearResult" >清除</button>
+                    <div class="col-md-4" style="margin-bottom: 10px;">
+                        <div class="row">
+                            <button class="col-md-3 btn btn-success myButton" @onclick="CopyResult" >复制</button>
+                            <button class="col-md-3 btn btn-primary myButton" @onclick="ReadResult" >朗读</button>
+                            <button class="col-md-3 btn btn-danger myButton" @onclick="ClearResult" >清除</button>
+                        </div>
                     </div>
                 </div>
 
@@ -61,10 +63,11 @@
                     <div class="col-8">
                         <button class="btn btn-light border key" @onclick='() => ShortCutInvoked("0")'>0</button>
                     </div>
-                    <div class="col">
+                    <div class="col-4">
                         <button class="btn btn-light border key" @onclick='() => ShortCutInvoked(".")'>.</button>
                     </div>
                 </div>
+
             </section>
         </div>
 
@@ -83,10 +86,9 @@
                         @foreach (var item in ReferList)
                         {
                             <div class="col-4">
-                                <button class="btn btn-light border refer" >
-                                    <div>
-                                        <h5>@item.Key</h5>
-                                        <h6>@item.Value</h6>
+                                <button class="btn btn-light border refer">
+                                    <div class="text-bottom">
+                                        @item.Key<small>(@item.Value)</small>
                                     </div>
                                 </button>
                             </div>
@@ -253,7 +255,7 @@
     /// </summary>
     private async Task ReadResult()
     {
-        // ParseResult = "张芳芳，我觉得你挺好看的，越来越喜欢你了";
+        // ParseResult = "张芳芳，我感觉你还是挺棒的，继续加油";
 
         if (!string.IsNullOrEmpty(ParseResult))
         {
