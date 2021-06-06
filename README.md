@@ -2,7 +2,9 @@
 
 ## 简介
 
-大写人民币翻译机，是一款结合`Blazor`和`WebAssembly`技术联合打造并且运行在`.Net 5.0`运行时的数字转大写人民币应用，适用于差旅报销时填写报销单需要将阿拉伯数字报销金额翻译成大写人民币金额的场景。
+大写人民币翻译机(ChineseYuanParser)，是一款结合`Blazor`和`WebAssembly`技术联合打造并且运行在`.Net 5.0`运行时的数字金额转大写人民币金额的应用，适用于差旅报销时填写报销单需要将阿拉伯数字报销金额翻译成大写人民币金额的场景。
+
+![](./Docs/Assets/2021-06-06-16-29-11.png)
 
 ## 引用
 
@@ -10,6 +12,6 @@
 
 ## 运行效果
 
-* [https://rmbcc.ledesign.org](https://rmbcc.ledesign.org)
+基于Azure静态网站应用服务(`Azure Static Web Apps`) 免费预览实现的一个临时发布：[https://rmbcc.ledesign.org](https://rmbcc.ledesign.org)，随时可能因为订阅原因失效。
 
-![](./Docs/Assets/2021-06-06-16-29-11.png)
+如果想了解Azure静态网站应用服务(`Azure Static Web Apps`)，可以查看另外一个文章：[尝鲜一试，Azure静态网站应用服务(Azure Static Web Apps) 免费预览，协同Github自动发布静态SPA](https://www.cnblogs.com/taylorshi/p/14746306.html)
