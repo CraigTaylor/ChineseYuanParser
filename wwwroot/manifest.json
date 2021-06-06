@@ -1,6 +1,6 @@
 {
-    "name": "大写人民币翻译",
-    "short_name": "大写人民币翻译",
+    "name": "大写人民币翻译机",
+    "short_name": "大写人民币翻译机",
     "start_url": "./",
     "display": "standalone",
     "background_color": "#ffffff",
