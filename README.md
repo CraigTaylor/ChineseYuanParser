@@ -6,7 +6,7 @@
 
 ![](./Docs/Assets/2021-06-06-16-29-11.png)
 
-## 引用
+## 借鉴和引用
 
 该项目为一个演示项目，旨在实践和练习Blazor技术，其原版来自阿迪的[RMBCapitalization-Blazor](https://github.com/EdiWang/RMBCapitalization-Blazor)和技术文章[《Blazor WASM 实现人民币大写转换器》](https://edi.wang/post/2021/3/1/blazor-wasm-rmb-capitalize)
 
