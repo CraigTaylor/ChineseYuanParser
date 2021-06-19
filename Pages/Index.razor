@@ -255,8 +255,6 @@
     /// </summary>
     private async Task ReadResult()
     {
-        // ParseResult = "张芳芳，我感觉你还是挺棒的，继续加油";
-
         if (!string.IsNullOrEmpty(ParseResult))
         {
             await JavaScriptRuntime.InvokeVoidAsync("readAloud.readText", ParseResult);
