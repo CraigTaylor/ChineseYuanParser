@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "r7tMvE/t5ETPkyAgEWjCI/fhzipFh3UB5XzQ7bKRbe4eQYeCbnXX1K5DuvUNbCDHNkw0R91TW5ufHBDAWQzgKQ==",
+  "dgSpecHash": "d6xATFkGnwXJkLG44YfsVIVXNLwBpJUnvvLUOvE9AYIZJb/C+4IYkqvHbzpMQhmfdwNk4SAOwP2IsNmzAoXqOQ==",
   "success": true,
-  "projectFilePath": "F:\\TempSpace\\ChineseYuanParser\\ChineseYuanParser.csproj",
+  "projectFilePath": "C:\\TempSpace\\ChineseYuanParser\\ChineseYuanParser.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\TaylorShi\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.0-preview.5.21301.17\\microsoft.aspnetcore.authorization.6.0.0-preview.5.21301.17.nupkg.sha512",
     "C:\\Users\\TaylorShi\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.0-preview.5.21301.17\\microsoft.aspnetcore.components.6.0.0-preview.5.21301.17.nupkg.sha512",

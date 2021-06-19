@@ -1468,11 +1468,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\TempSpace\\ChineseYuanParser\\ChineseYuanParser.csproj",
+      "projectUniqueName": "C:\\TempSpace\\ChineseYuanParser\\ChineseYuanParser.csproj",
       "projectName": "ChineseYuanParser",
-      "projectPath": "F:\\TempSpace\\ChineseYuanParser\\ChineseYuanParser.csproj",
+      "projectPath": "C:\\TempSpace\\ChineseYuanParser\\ChineseYuanParser.csproj",
       "packagesPath": "C:\\Users\\TaylorShi\\.nuget\\packages\\",
-      "outputPath": "F:\\TempSpace\\ChineseYuanParser\\obj\\",
+      "outputPath": "C:\\TempSpace\\ChineseYuanParser\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
