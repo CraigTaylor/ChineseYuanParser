@@ -123,9 +123,9 @@
 
                     arr.push("_framework/blazor.webassembly.js");
                     for (var p in res.resources.runtime)
-                        arr.push("_framework/wasm/" + p);
+                        arr.push("_framework/" + p);
                     for (var p in res.resources.assembly)
-                        arr.push("_framework/_bin/" + p);
+                        arr.push("_framework/" + p);
 
                     moveFront("System.Core.dll");
                     moveFront("System.Data.dll");
